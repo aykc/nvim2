@@ -111,16 +111,16 @@ return {
           k = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk" },
         },
       },
-      g = {
-        c = {
-          name = "Linewise comment",
-          c = { desc = "Current line" },
-        },
-        b = {
-          name = "Blockwise comment",
-          c = { desc = "Current line" },
-        },
-      }
+      -- g = {
+      --   c = {
+      --     name = "Linewise comment",
+      --     c = { desc = "Current line" },
+      --   },
+      --   b = {
+      --     name = "Blockwise comment",
+      --     c = { desc = "Current line" },
+      --   },
+      -- }
     }
     wk.register(mappings, opts)
   end,
