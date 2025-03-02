@@ -1,9 +1,6 @@
 return {
   "sainnhe/gruvbox-material",
   opts = {
-    colors_override = {
-      bg = "#000000"
-    }
   },
   config = function()
     vim.g.gruvbox_material_colors_override = {
