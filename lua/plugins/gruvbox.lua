@@ -1,10 +1,10 @@
 return {
-  --[[ "ellisonleao/gruvbox.nvim",
+  "ellisonleao/gruvbox.nvim",
   opts = {
     terminal_colors = true, -- add neovim terminal colors
     undercurl = true,
     underline = true,
-    bold = true,
+    bold = false,
     italic = {
       strings = true,
       emphasis = true,
@@ -19,13 +19,12 @@ return {
     invert_intend_guides = false,
     inverse = true, -- invert background for search, diffs, statuslines and errors
     contrast = "hard", -- can be "hard", "soft" or empty string
-    palette_overrides = {},
+    palette_overrides = {
+      dark0_hard = "#17191a",
+      bright_green = "#80B050"
+    },
     overrides = {},
     dim_inactive = false,
     transparent_mode = false,
   },
-  config = function()
-    vim.o.background = 'dark'
-    vim.cmd 'colorscheme gruvbox'
-  end, ]]
 }

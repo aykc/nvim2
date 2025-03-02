@@ -12,3 +12,5 @@ end
 vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 require("lazy").setup("plugins")
+vim.o.background = 'dark'
+vim.cmd.colorscheme "gruvbox"
