@@ -1,5 +1,5 @@
 return {
-  --[[ "ellisonleao/gruvbox.nvim",
+  "sainnhe/gruvbox-material",
   opts = {
     terminal_colors = true, -- add neovim terminal colors
     undercurl = true,
@@ -21,11 +21,12 @@ return {
     contrast = "hard", -- can be "hard", "soft" or empty string
     palette_overrides = {},
     overrides = {},
-    dim_inactive = false,
+    dim_inactive = true,
     transparent_mode = false,
   },
   config = function()
     vim.o.background = 'dark'
-    vim.cmd 'colorscheme gruvbox'
-  end, ]]
+    vim.cmd [[let g:gruvbox_material_colors_override = {'bg0': ['#1A1A1A', '234']}]]
+    vim.cmd 'colorscheme gruvbox-material'
+  end,
 }
