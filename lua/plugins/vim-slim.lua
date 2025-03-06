@@ -1,3 +1,3 @@
 return {
-  'slim-template/vim-slim',
+	"slim-template/vim-slim",
 }
