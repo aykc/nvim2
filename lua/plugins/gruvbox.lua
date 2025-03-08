@@ -22,6 +22,7 @@ return {
 		palette_overrides = {
 			dark0_hard = "#17191a",
 			bright_green = "#80B050",
+      dark2 = "#605955",
 		},
 		overrides = {},
 		dim_inactive = false,
