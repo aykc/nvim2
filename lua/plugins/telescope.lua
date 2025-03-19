@@ -10,17 +10,17 @@ return {
 	},
 	keys = {
 		-- Files
-		{ "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Find Files" },
-		{ "<leader>fg", "<cmd>Telescope live_grep preview={timeout=1000}<CR>", desc = "Find text" },
-		{ "<leader>fb", "<cmd>Telescope buffers<CR>", desc = "Find buffers" },
+		{ "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Files" },
+		{ "<leader>fg", "<cmd>Telescope live_grep preview={timeout=1000}<CR>", desc = "Text" },
+		{ "<leader>fb", "<cmd>Telescope buffers<CR>", desc = "Buffers" },
 		{ "<leader>fh", "<cmd>Telescope help_tags<CR>", desc = "Help" },
-		{ "<leader>fk", "<cmd>Telescope keymaps<CR>", desc = "Find keymaps" },
+		{ "<leader>fk", "<cmd>Telescope keymaps<CR>", desc = "Keymaps" },
 		-- LSP
 		{ "<leader>fr", "<cmd>lua require('telescope.builtin').lsp_references()<CR>", desc = "LSP references" },
 		-- Git
-		{ "<leader>gc", "<cmd>lua require('telescope.builtin').git_commits()<CR>", desc = "Git commits" },
-		{ "<leader>gb", "<cmd>lua require('telescope.builtin').git_branches()<CR>", desc = "Git branches" },
-		{ "<leader>gs", "<cmd>lua require('telescope.builtin').git_status()<CR>", desc = "Git status" },
+		{ "<leader>gc", "<cmd>lua require('telescope.builtin').git_commits()<CR>", desc = "Commits" },
+		{ "<leader>gb", "<cmd>lua require('telescope.builtin').git_branches()<CR>", desc = "Branches" },
+		{ "<leader>gs", "<cmd>lua require('telescope.builtin').git_status()<CR>", desc = "Status" },
 	},
 	opts = {
 		defaults = {

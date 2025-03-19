@@ -2,7 +2,7 @@ return {
 	"rmagatti/auto-session",
   lazy = false,
   keys = {
-    { '<leader>ss', '<cmd>SessionSearch<CR>', desc = 'Session search' },
+    { '<leader>fs', '<cmd>SessionSearch<CR>', desc = 'Sessions' },
   },
 	opts = {
     suppressed_dirs = { '~/', '~/Projects', '~/Downloads', '/' },

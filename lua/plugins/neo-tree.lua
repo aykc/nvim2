@@ -24,6 +24,9 @@ return {
       }
     },
   },
+  keys = {
+    { "<leader>e", "<cmd>Neotree toggle<cr>", desc = "Explorer" },
+  },
   opts = {
     -- If a user has a sources list it will replace this one.
     -- Only sources listed here will be loaded.
