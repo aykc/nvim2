@@ -16,7 +16,7 @@ return {
 		{ "<leader>fh", "<cmd>Telescope help_tags<CR>", desc = "Help" },
 		{ "<leader>fk", "<cmd>Telescope keymaps<CR>", desc = "Find keymaps" },
 		-- LSP
-		{ "<leader>lr", "<cmd>lua require('telescope.builtin').lsp_references()<CR>", desc = "LSP references" },
+		{ "<leader>fr", "<cmd>lua require('telescope.builtin').lsp_references()<CR>", desc = "LSP references" },
 		-- Git
 		{ "<leader>gc", "<cmd>lua require('telescope.builtin').git_commits()<CR>", desc = "Git commits" },
 		{ "<leader>gb", "<cmd>lua require('telescope.builtin').git_branches()<CR>", desc = "Git branches" },

@@ -8,6 +8,7 @@ return {
     { "gd",         vim.lsp.buf.definition,  desc = "definition" },
     { "gD",         vim.lsp.buf.declaration, desc = "declaration" },
     { "<leader>ca", vim.lsp.buf.code_action, mode = { "n", "v" }, desc = "code action" },
+    { "<leader>cr", vim.lsp.buf.references, desc = "references" },
   },
   config = function()
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
