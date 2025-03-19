@@ -1,7 +1,7 @@
 return {
 	"lukas-reineke/indent-blankline.nvim",
 	main = "ibl",
-	opts = function(_, opts)
+	--[[ opts = function(_, opts)
 		opts = {
 			indent = {
 				-- highlight = highlight,
@@ -21,8 +21,8 @@ return {
 	end,
 	dependencies = {
 		"TheGLander/indent-rainbowline.nvim",
-	},
-	--[[ config = function()
+	}, ]]
+	config = function()
 		local highlight = {
 			"RainbowRed",
 			"RainbowYellow",
@@ -35,7 +35,7 @@ return {
 
 		local opts = {
 			indent = {
-				highlight = highlight,
+				-- highlight = highlight,
 				char = "┊",
 			},
 			scope = {
@@ -58,5 +58,5 @@ return {
 		end)
 
 		require("ibl").setup(opts)
-	end, ]]
+	end,
 }
