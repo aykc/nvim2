@@ -1,6 +1,7 @@
 return {
   "lewis6991/gitsigns.nvim",
   main = "gitsigns",
+  lazy = false,
   keys = {
     { "<leader>gB", "<cmd>lua require 'gitsigns'.toggle_current_line_blame()<cr>", desc = "Current Line Blame" },
     { "<leader>gp", "<cmd>lua require 'gitsigns'.preview_hunk()<cr>",              desc = "Preview Hunk" },
