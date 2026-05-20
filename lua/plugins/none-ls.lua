@@ -9,7 +9,7 @@ return {
       sources = {
         formatting.stylua,
         diagnostics.rubocop,
-        diagnostics.eslint_d,
+        -- diagnostics.eslint_d,
         formatting.rubocop,
         formatting.prettier,
       },

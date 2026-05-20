@@ -38,10 +38,11 @@ return {
     vim.diagnostic.config(config)
 
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
-    local lspconfig = require("lspconfig")
+    -- local lspconfig = require("lspconfig")
     local util = require("lspconfig.util")
 
-    lspconfig.lua_ls.setup({
+    -- lspconfig.lua_ls.setup({
+    vim.lsp.config("lua_ls", {
       capabilities = capabilities,
       settings = {
         Lua = {
@@ -51,7 +52,10 @@ return {
         },
       },
     })
-    lspconfig.ruby_lsp.setup({
+    vim.lsp.enable("lua_ls")
+
+    -- lspconfig.ruby_lsp.setup({
+    vim.lsp.config("ruby_lsp", {
       capabilities = capabilities,
       mason = false,
       cmd = { "ruby-lsp" },
@@ -63,6 +67,7 @@ return {
       single_file_support = true,
       -- cmd = { vim.fn.expand("~/.rbenv/versions/3.1.2/bin/ruby-lsp") },
     })
+    vim.lsp.enable("ruby_lsp")
 
     -- lspconfig.solargraph.setup {}
     --[[ lspconfig.rubocop.setup({
@@ -77,13 +82,13 @@ return {
       single_file_support = true,
     }) ]]
 
-    lspconfig.ts_ls.setup({
-      capabilities = capabilities,
-    })
-
-    lspconfig.gopls.setup({
-      capabilities = capabilities,
-    })
+    -- lspconfig.ts_ls.setup({
+    --   capabilities = capabilities,
+    -- })
+    --
+    -- lspconfig.gopls.setup({
+    --   capabilities = capabilities,
+    -- })
 
     -- LspAttach event
     vim.api.nvim_create_autocmd("LspAttach", {
