@@ -17,10 +17,10 @@ keymap("n", "H", "gT", opts)
 keymap("n", "L", "gt", opts)
 
 -- Resize windows with arrow keys
-keymap("n", "<c-up>", ":resize +2<cr>", opts)
-keymap("n", "<c-down>", ":resize -2<cr>", opts)
-keymap("n", "<c-right>", ":vertical resize +2<cr>", opts)
-keymap("n", "<c-left>", ":vertical resize -2<cr>", opts)
+keymap("n", "<c-a-k>", ":resize +2<cr>", opts)
+keymap("n", "<c-a-j>", ":resize -2<cr>", opts)
+keymap("n", "<c-a-l>", ":vertical resize +2<cr>", opts)
+keymap("n", "<c-a-h>", ":vertical resize -2<cr>", opts)
 
 -- Easy escape from insert mode
 keymap("i", "jj", "<esc>", opts)
