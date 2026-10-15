@@ -5,6 +5,7 @@ return {
   keys = {
     { "<leader>gB", "<cmd>lua require 'gitsigns'.toggle_current_line_blame()<cr>", desc = "Current Line Blame" },
     { "<leader>gp", "<cmd>lua require 'gitsigns'.preview_hunk()<cr>",              desc = "Preview Hunk" },
+    { "<leader>ga", "<cmd>lua require 'gitsigns'.stage_hunk()<cr>",                desc = "Stage Hunk" },
     { "<leader>gr", "<cmd>lua require 'gitsigns'.reset_hunk()<cr>",                desc = "Reset Hunk" },
     { "<leader>gR", "<cmd>lua require 'gitsigns'.reset_buffer()<cr>",              desc = "Reset Buffer" },
     { "<leader>gj", "<cmd>lua require 'gitsigns'.next_hunk()<cr>",                 desc = "Next Hunk" },
